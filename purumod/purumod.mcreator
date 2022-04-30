@@ -103,6 +103,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "oak_wooden_chair"
+    },
+    {
+      "name": "OakWoodenChairCraftL",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_wooden_chair_craft_l"
+    },
+    {
+      "name": "OakWoodenChairCraftR",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_wooden_chair_craft_r"
     }
   ],
   "variable_elements": [],
