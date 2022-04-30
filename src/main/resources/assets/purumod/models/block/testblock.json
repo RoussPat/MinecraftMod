@@ -1,0 +1,8 @@
+{
+  "parent": "purumod:custom/woodenstool",
+  "textures": {
+    "all": "purumod:blocks/t_woodenstool_oak",
+    "particle": "purumod:blocks/t_woodenstool_oak",
+    "1": "purumod:blocks/t_woodenstool_oak"
+  }
+}
