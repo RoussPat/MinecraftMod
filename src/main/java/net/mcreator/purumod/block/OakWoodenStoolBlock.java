@@ -4,6 +4,9 @@ package net.mcreator.purumod.block;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -21,11 +24,11 @@ import net.mcreator.purumod.init.PurumodModBlocks;
 import java.util.List;
 import java.util.Collections;
 
-public class TestblockBlock extends Block {
-	public TestblockBlock() {
+public class OakWoodenStoolBlock extends Block {
+	public OakWoodenStoolBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("testblock");
+		setRegistryName("oak_wooden_stool");
 	}
 
 	@Override
@@ -39,6 +42,12 @@ public class TestblockBlock extends Block {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		Vec3 offset = state.getOffset(world, pos);
+		return box(1, 0, 1, 15, 14, 15).move(offset.x, offset.y, offset.z);
+	}
+
+	@Override
 	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
@@ -48,6 +57,6 @@ public class TestblockBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.TESTBLOCK, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.OAK_WOODEN_STOOL, renderType -> renderType == RenderType.cutout());
 	}
 }

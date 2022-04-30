@@ -12,7 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.purumod.block.TestblockBlock;
+import net.mcreator.purumod.block.OakWoodenStoolBlock;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurumodModBlocks {
 	private static final List<Block> REGISTRY = new ArrayList<>();
-	public static final Block TESTBLOCK = register(new TestblockBlock());
+	public static final Block OAK_WOODEN_STOOL = register(new OakWoodenStoolBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -36,7 +36,7 @@ public class PurumodModBlocks {
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
-			TestblockBlock.registerRenderLayer();
+			OakWoodenStoolBlock.registerRenderLayer();
 		}
 	}
 }

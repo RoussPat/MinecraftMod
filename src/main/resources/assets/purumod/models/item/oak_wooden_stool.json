@@ -1,5 +1,5 @@
 {
-  "parent": "purumod:block/testblock",
+  "parent": "purumod:block/oak_wooden_stool",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -1,19 +1,19 @@
 {
   "mod_elements": [
     {
-      "name": "Testblock",
+      "name": "OakWoodenStool",
       "type": "block",
-      "sortid": 1,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "testblock"
+      "registry_name": "oak_wooden_stool"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.purumod.testblock": "Testblock"
+      "block.purumod.oak_wooden_stool": "Testblock"
     }
   },
   "foldersRoot": {
