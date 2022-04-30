@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "1": "t_woodenstool_oak"
+        "2": "t_woodenstool_oak"
       },
       "name": "default"
     }
