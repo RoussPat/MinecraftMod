@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "purumod:block/oak_wooden_chair"
+    },
+    "facing=east": {
+      "model": "purumod:block/oak_wooden_chair",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "purumod:block/oak_wooden_chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "purumod:block/oak_wooden_chair",
+      "y": 270
+    }
+  }
+}

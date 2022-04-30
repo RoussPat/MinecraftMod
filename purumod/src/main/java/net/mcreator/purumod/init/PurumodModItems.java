@@ -25,6 +25,7 @@ public class PurumodModItems {
 	public static final Item SPRUCE_WOODEN_STOOL = register(PurumodModBlocks.SPRUCE_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item ACACIA_WOODEN_STOOL = register(PurumodModBlocks.ACACIA_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item JUNGLE_WOODEN_STOOL = register(PurumodModBlocks.JUNGLE_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_WOODEN_CHAIR = register(PurumodModBlocks.OAK_WOODEN_CHAIR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
