@@ -106,12 +106,12 @@
 		{
 			"name": "Dossier1",
 			"from": [2, 6, 14],
-			"to": [14, 21, 16],
+			"to": [14, 19, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, -5, 8]},
 			"faces": {
-				"north": {"uv": [2, 0, 14, 15], "texture": "#0"},
+				"north": {"uv": [2, 0, 14, 13], "texture": "#0"},
 				"east": {"uv": [2, 0, 4, 15], "texture": "#0"},
-				"south": {"uv": [2, 0, 14, 15], "texture": "#0"},
+				"south": {"uv": [2, 0, 14, 13], "texture": "#0"},
 				"west": {"uv": [2, 0, 4, 15], "texture": "#0"},
 				"up": {"uv": [2, 0, 14, 2], "texture": "#0"},
 				"down": {"uv": [2, 0, 14, 2], "texture": "#0"}
@@ -119,8 +119,8 @@
 		},
 		{
 			"name": "Dossier2",
-			"from": [3, 21, 14],
-			"to": [13, 22, 16],
+			"from": [3, 19, 14],
+			"to": [13, 20, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, -5, 8]},
 			"faces": {
 				"north": {"uv": [2, 0, 12, 1], "texture": "#0"},
@@ -134,31 +134,32 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [60, -50, 0],
+			"rotation": [60, 130, 0],
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [60, -50, 0],
+			"rotation": [60, 130, 0],
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"firstperson_righthand": {
-			"rotation": [2, -67, -14],
+			"rotation": [2, 110, -14],
 			"translation": [7, -3.25, -0.75]
 		},
 		"firstperson_lefthand": {
-			"rotation": [2, -67, -14],
+			"rotation": [2, 110, -14],
 			"translation": [7, -3.25, -0.75]
 		},
 		"ground": {
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"gui": {
-			"rotation": [10, 30, 0],
-			"translation": [0, -3, 0],
+			"rotation": [10, 150, 0],
+			"translation": [0, -1.5, 0],
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"head": {
-			"translation": [0, 0.75, 0],
+			"rotation": [0, -180, 0],
+			"translation": [0, 5.25, 0],
 			"scale": [1.05, 0.9, 1.05]
 		},
 		"fixed": {
