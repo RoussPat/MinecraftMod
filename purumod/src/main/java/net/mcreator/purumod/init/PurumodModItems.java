@@ -20,6 +20,11 @@ import java.util.ArrayList;
 public class PurumodModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
 	public static final Item OAK_WOODEN_STOOL = register(PurumodModBlocks.OAK_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item BIRCH_WOODEN_STOOL = register(PurumodModBlocks.BIRCH_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item DARK_OAK_WOODEN_STOOL = register(PurumodModBlocks.DARK_OAK_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item SPRUCE_WOODEN_STOOL = register(PurumodModBlocks.SPRUCE_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item ACACIA_WOODEN_STOOL = register(PurumodModBlocks.ACACIA_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item JUNGLE_WOODEN_STOOL = register(PurumodModBlocks.JUNGLE_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

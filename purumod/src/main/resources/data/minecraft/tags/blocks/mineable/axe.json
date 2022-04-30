@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "purumod:oak_wooden_stool"
+    "purumod:oak_wooden_stool",
+    "purumod:birch_wooden_stool",
+    "purumod:dark_oak_wooden_stool",
+    "purumod:spruce_wooden_stool",
+    "purumod:acacia_wooden_stool",
+    "purumod:jungle_wooden_stool"
   ]
 }

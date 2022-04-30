@@ -7,13 +7,66 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "oak_wooden_stool"
+    },
+    {
+      "name": "OakWoodenStoolCraft",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_wooden_stool_craft"
+    },
+    {
+      "name": "BirchWoodenStool",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_wooden_stool"
+    },
+    {
+      "name": "DarkOakWoodenStool",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_wooden_stool"
+    },
+    {
+      "name": "SpruceWoodenStool",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_wooden_stool"
+    },
+    {
+      "name": "AcaciaWoodenStool",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_wooden_stool"
+    },
+    {
+      "name": "JungleWoodenStool",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_wooden_stool"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.purumod.oak_wooden_stool": "Testblock"
+      "block.purumod.jungle_wooden_stool": "Jungle Wooden Stool",
+      "block.purumod.birch_wooden_stool": "Birch Wooden Stool",
+      "block.purumod.oak_wooden_stool": "Oak Wooden Stool",
+      "block.purumod.dark_oak_wooden_stool": "Dark Oak Wooden Stool",
+      "block.purumod.spruce_wooden_stool": "Spruce Wooden Stool",
+      "block.purumod.acacia_wooden_stool": "Acacia Wooden Stool"
     }
   },
   "foldersRoot": {
