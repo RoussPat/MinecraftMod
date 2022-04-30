@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.purumod.block.SpruceWoodenStoolBlock;
 import net.mcreator.purumod.block.OakWoodenStoolBlock;
+import net.mcreator.purumod.block.OakWoodenChairBlock;
 import net.mcreator.purumod.block.JungleWoodenStoolBlock;
 import net.mcreator.purumod.block.DarkOakWoodenStoolBlock;
 import net.mcreator.purumod.block.BirchWoodenStoolBlock;
@@ -31,6 +32,7 @@ public class PurumodModBlocks {
 	public static final Block SPRUCE_WOODEN_STOOL = register(new SpruceWoodenStoolBlock());
 	public static final Block ACACIA_WOODEN_STOOL = register(new AcaciaWoodenStoolBlock());
 	public static final Block JUNGLE_WOODEN_STOOL = register(new JungleWoodenStoolBlock());
+	public static final Block OAK_WOODEN_CHAIR = register(new OakWoodenChairBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -52,6 +54,7 @@ public class PurumodModBlocks {
 			SpruceWoodenStoolBlock.registerRenderLayer();
 			AcaciaWoodenStoolBlock.registerRenderLayer();
 			JungleWoodenStoolBlock.registerRenderLayer();
+			OakWoodenChairBlock.registerRenderLayer();
 		}
 	}
 }

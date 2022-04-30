@@ -1,0 +1,8 @@
+{
+  "parent": "purumod:custom/woodenchair",
+  "textures": {
+    "all": "purumod:blocks/t_woodenchair_oak",
+    "particle": "purumod:blocks/t_woodenchair_oak",
+    "0": "purumod:blocks/t_woodenchair_oak"
+  }
+}
