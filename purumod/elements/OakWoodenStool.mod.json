@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "woodenstool:oak",
+    "customModelName": "woodenstool:default",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
