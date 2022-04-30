@@ -19,7 +19,7 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class PurumodModItems {
 	private static final List<Item> REGISTRY = new ArrayList<>();
-	public static final Item OAK_WOODEN_STOOL = register(PurumodModBlocks.OAK_WOODEN_STOOL, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item OAK_WOODEN_STOOL = register(PurumodModBlocks.OAK_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
