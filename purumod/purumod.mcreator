@@ -7,21 +7,13 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "oak_wooden_stool"
-    },
-    {
-      "name": "OakWoodenStoolCraft",
-      "type": "recipe",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oak_wooden_stool_craft"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.purumod.oak_wooden_stool": "Oak Wooden Stool"
+      "block.purumod.oak_wooden_stool": "Testblock"
     }
   },
   "foldersRoot": {
