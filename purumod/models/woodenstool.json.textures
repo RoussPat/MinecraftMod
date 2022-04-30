@@ -5,6 +5,42 @@
         "2": "t_woodenstool_oak"
       },
       "name": "default"
+    },
+    "acacia": {
+      "map": {
+        "2": "t_woodenstool_acacia"
+      },
+      "name": "acacia"
+    },
+    "birch": {
+      "map": {
+        "2": "t_woodenstool_birch"
+      },
+      "name": "birch"
+    },
+    "darkoak": {
+      "map": {
+        "2": "t_woodenstool_darkoak"
+      },
+      "name": "darkoak"
+    },
+    "jungle": {
+      "map": {
+        "2": "t_woodenstool_jungle"
+      },
+      "name": "jungle"
+    },
+    "oak": {
+      "map": {
+        "2": "t_woodenstool_oak"
+      },
+      "name": "oak"
+    },
+    "spruce": {
+      "map": {
+        "2": "t_woodenstool_spruce"
+      },
+      "name": "spruce"
     }
   }
 }

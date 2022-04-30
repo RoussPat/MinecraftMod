@@ -17,6 +17,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -31,6 +32,11 @@ public class OakWoodenStoolBlock extends Block {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 		setRegistryName("oak_wooden_stool");
+	}
+
+	@Override
+	public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
+		return adjacentBlockState.getBlock() == this ? true : super.skipRendering(state, adjacentBlockState, side);
 	}
 
 	@Override
@@ -52,7 +58,7 @@ public class OakWoodenStoolBlock extends Block {
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
 		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 0;
+			return tieredItem.getTier().getLevel() >= -1;
 		return false;
 	}
 

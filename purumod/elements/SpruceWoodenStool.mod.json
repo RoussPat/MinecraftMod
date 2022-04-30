@@ -9,10 +9,10 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "woodenstool:default",
+    "customModelName": "woodenstool:spruce",
     "rotationMode": 0,
     "emissiveRendering": false,
-    "displayFluidOverlay": false,
+    "displayFluidOverlay": true,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
@@ -96,7 +96,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": -1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
