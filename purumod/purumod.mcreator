@@ -55,6 +55,46 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "jungle_wooden_stool"
+    },
+    {
+      "name": "BirchWoodenStoolCraft",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_wooden_stool_craft"
+    },
+    {
+      "name": "DarkOakWoodenStoolCraft",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_wooden_stool_craft"
+    },
+    {
+      "name": "SpruceWoodenStoolCraft",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_wooden_stool_craft"
+    },
+    {
+      "name": "AcaciaWoodenStoolCraft",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_wooden_stool_craft"
+    },
+    {
+      "name": "JungleWoodenStoolCraft",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_wooden_stool_craft"
     }
   ],
   "variable_elements": [],
@@ -71,7 +111,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "WoodenStool",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "purumod",
