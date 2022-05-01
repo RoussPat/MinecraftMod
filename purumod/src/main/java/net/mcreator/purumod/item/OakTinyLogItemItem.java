@@ -28,7 +28,6 @@ public class OakTinyLogItemItem extends Item {
     @Override
     public InteractionResult useOn(UseOnContext context) {
         InteractionResult retval = super.useOn(context);
-        BlockPos pos = context.getClickedPos();
         OnTinyLogItemUseProcedure.execute(context);
         return retval;
     }

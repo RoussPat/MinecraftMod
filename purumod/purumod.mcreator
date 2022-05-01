@@ -157,27 +157,72 @@
       "path": "~/TinyLog"
     },
     {
-      "name": "BirchTinyLog12",
+      "name": "BirchTinyLog01",
       "type": "block",
-      "sortid": 27,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "birch_tiny_log_12",
+      "registry_name": "birch_tiny_log_01",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "DarkOakTinyLog01",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_tiny_log_01",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "JungleTinyLog01",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_tiny_log_01",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "SpruceTinyLog01",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_tiny_log_01",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "AcaciaTinyLog01",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_tiny_log_01",
       "path": "~/TinyLog"
     },
     {
       "name": "DarkOakTinyLog12",
       "type": "block",
-      "sortid": 28,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_tiny_log_12",
       "path": "~/TinyLog"
     },
     {
+      "name": "BirchTinyLog12",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_tiny_log_12",
+      "path": "~/TinyLog"
+    },
+    {
       "name": "JungleTinyLog12",
       "type": "block",
-      "sortid": 29,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jungle_tiny_log_12",
@@ -186,7 +231,7 @@
     {
       "name": "SpruceTinyLog12",
       "type": "block",
-      "sortid": 30,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spruce_tiny_log_12",
@@ -195,10 +240,91 @@
     {
       "name": "AcaciaTinyLog12",
       "type": "block",
-      "sortid": 31,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acacia_tiny_log_12",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog11",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_11",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog10",
+      "type": "block",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_10",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog09",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_09",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog08",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_08",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog07",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_07",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog06",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_06",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog05",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_05",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog04",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_04",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog03",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_03",
       "path": "~/TinyLog"
     }
   ],
@@ -207,20 +333,34 @@
   "language_map": {
     "en_us": {
       "block.purumod.spruce_tiny_log_12": "Oak Tiny Log 0 1",
-      "block.purumod.birch_tiny_log_12": "Oak Tiny Log 0 1",
-      "item.purumod.oak_tiny_log_item": "Oak Tiny Log Item",
+      "block.purumod.birch_tiny_log_01": "Oak Tiny Log 0 1",
       "block.purumod.birch_wooden_stool": "Birch Wooden Stool",
-      "block.purumod.oak_wooden_stool": "Oak Wooden Stool",
       "block.purumod.dark_oak_wooden_stool": "Dark Oak Wooden Stool",
       "block.purumod.oak_wooden_chair": "Oak Wooden Chair",
       "block.purumod.jungle_tiny_log_12": "Oak Tiny Log 0 1",
       "block.purumod.spruce_wooden_stool": "Spruce Wooden Stool",
-      "block.purumod.oak_tiny_log_02": "Oak Tiny Log 0 1",
-      "block.purumod.oak_tiny_log_01": "Oak Tiny Log 0 1",
       "block.purumod.oak_tiny_log_12": "Oak Tiny Log 0 1",
       "block.purumod.jungle_wooden_stool": "Jungle Wooden Stool",
       "block.purumod.acacia_tiny_log_12": "Oak Tiny Log 0 1",
       "block.purumod.dark_oak_tiny_log_12": "Oak Tiny Log 0 1",
+      "block.purumod.spruce_tiny_log_01": "Oak Tiny Log 0 1",
+      "block.purumod.birch_tiny_log_12": "Oak Tiny Log 0 1",
+      "item.purumod.oak_tiny_log_item": "Oak Tiny Log Item",
+      "block.purumod.oak_tiny_log_09": "Oak Tiny Log 0 1",
+      "block.purumod.oak_wooden_stool": "Oak Wooden Stool",
+      "block.purumod.jungle_tiny_log_01": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_04": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_03": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_02": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_01": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_08": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_07": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_06": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_05": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_11": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_10": "Oak Tiny Log 0 1",
+      "block.purumod.acacia_tiny_log_01": "Oak Tiny Log 0 1",
+      "block.purumod.dark_oak_tiny_log_01": "Oak Tiny Log 0 1",
       "block.purumod.acacia_wooden_stool": "Acacia Wooden Stool"
     }
   },

@@ -1,14 +1,12 @@
 package net.mcreator.purumod.procedures;
 
 import net.mcreator.purumod.PurumodMod;
-import net.mcreator.purumod.block.OakTinyLog01Block;
 import net.mcreator.purumod.init.PurumodModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -17,7 +15,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.phys.BlockHitResult;
 import org.apache.logging.log4j.Logger;
 
 import java.util.Map;
@@ -42,34 +39,46 @@ public class OnTinyLogItemUseProcedure {
         logger.info(player.toString());
         String descriptionId = Objects.requireNonNull(blockstate.getBlock().getRegistryName()).toString();
         if (descriptionId.contains("tiny_log")) {
-            logger.info("Tiny Log detected");
-            String[] descriptionIdSplit = descriptionId.split("_");
-            String woodType = descriptionIdSplit[0];
-            int stackSize = Integer.parseInt(descriptionIdSplit[descriptionIdSplit.length - 1]);
-
-            if (stackSize < 12) {
-                if (itemstack.getCount() > 1) {
-                    itemstack.setCount(itemstack.getCount() - 1);
-                    BlockState newBlock = getNextBlock(blockstate.getBlock());
-                    copyAllProperties(world.getBlockState(pos), newBlock);
-                    Direction initialDirection = blockstate.getValue(HorizontalDirectionalBlock.FACING);
-                    world.setBlock(pos, newBlock, 3);
-                    setDirectionForBlock(world,initialDirection,pos);
-                }
-            } else {
-
-                placeBlockNormaly(world, pos, player, clickedFace);
-            }
+            placeTinyLog(world, pos, blockstate, itemstack, player, clickedFace);
         } else {
-            placeBlockNormaly(world, pos, player, clickedFace);
+            placeBlockNormally(world, pos, blockstate, itemstack, player, clickedFace);
         }
     }
 
-    private static void placeBlockNormaly(Level world, BlockPos pos, Player player, Direction clickedFace) {
-        var newpos = computeNewPos(clickedFace, pos);
-        world.setBlock(newpos, PurumodModBlocks.OAK_TINY_LOG_01.defaultBlockState(), 3);
-        setDirectionForBlock(world, player.getDirection(), newpos);
+    private static void placeTinyLog(Level world, BlockPos pos, BlockState blockstate, ItemStack itemstack, Player player, Direction clickedFace) {
+        String descriptionId = Objects.requireNonNull(blockstate.getBlock().getRegistryName()).toString();
+        String[] descriptionIdSplit = descriptionId.split(":")[1].split("_");
+        String aimedWoodType = descriptionIdSplit[0];
+        String heldItemWoodType = itemstack.getDescriptionId().split("\\.")[2].split("_")[0];
+        int stackSize = Integer.parseInt(descriptionIdSplit[descriptionIdSplit.length - 1]);
+        logger.info(aimedWoodType);
+        logger.info(heldItemWoodType);
+        logger.info(descriptionId);
+        logger.info(itemstack.getDescriptionId());
+        if (stackSize < 12 && Objects.equals(aimedWoodType, heldItemWoodType) && descriptionId.contains("tiny_log")) {
+            if (itemstack.getCount() > 1) {
+                itemstack.setCount(itemstack.getCount() - 1);
+                BlockState newBlock = getNextBlock(blockstate.getBlock());
+                copyAllProperties(world.getBlockState(pos), newBlock);
+                Direction initialDirection = blockstate.getValue(HorizontalDirectionalBlock.FACING);
+                world.setBlock(pos, newBlock, 3);
+                setDirectionForBlock(world, initialDirection, pos);
+            }
+        } else {
+            placeBlockNormally(world, pos, blockstate, itemstack, player, clickedFace);
+        }
+    }
 
+    private static void placeBlockNormally(Level world, BlockPos pos, BlockState blockState, ItemStack itemstack, Player player, Direction clickedFace) {
+        var newPos = computeNewPos(clickedFace, pos);
+        BlockState newBlockState =  world.getBlockState(newPos);
+        String descriptionId = Objects.requireNonNull(newBlockState.getBlock().getRegistryName()).toString();
+        if (descriptionId.contains("tiny_log")) {
+            placeTinyLog(world, newPos, newBlockState, itemstack, player, clickedFace);
+        } else {
+            world.setBlock(newPos, PurumodModBlocks.OAK_TINY_LOG_01.defaultBlockState(), 3);
+            setDirectionForBlock(world, player.getDirection(), newPos);
+        }
     }
 
     private static void setDirectionForBlock(Level world, Direction direction, BlockPos pos) {
@@ -92,22 +101,36 @@ public class OnTinyLogItemUseProcedure {
         if (PurumodModBlocks.OAK_TINY_LOG_01.equals(block)) {
             return PurumodModBlocks.OAK_TINY_LOG_02.defaultBlockState();
         } else if (PurumodModBlocks.OAK_TINY_LOG_02.equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_03.defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_03.equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_04.defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_04.equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_05.defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_05.equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_06.defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_06.equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_07.defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_07.equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_08.defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_08.equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_09.defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_09.equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_10.defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_10.equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_11.defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_11.equals(block)) {
             return PurumodModBlocks.OAK_TINY_LOG_12.defaultBlockState();
         }
         return PurumodModBlocks.OAK_TINY_LOG_01.defaultBlockState();
 
     }
 
-    private static BlockState copyAllProperties(BlockState source, BlockState destination) {
+    private static void copyAllProperties(BlockState source, BlockState destination) {
         for (Map.Entry<Property<?>, Comparable<?>> entry : source.getValues().entrySet()) {
             Property property = source.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
             if (property != null && destination.getValue(property) != null) {
-                try {
-                    destination = destination.setValue(property, (Comparable) entry.getValue());
-                } catch (Exception e) {
-                }
+                destination = destination.setValue(property, (Comparable) entry.getValue());
             }
         }
-        return destination;
     }
 }

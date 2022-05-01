@@ -32,11 +32,25 @@ public class PurumodModItems {
 	public static final Item OAK_TINY_LOG_01 = register(PurumodModBlocks.OAK_TINY_LOG_01, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item OAK_TINY_LOG_02 = register(PurumodModBlocks.OAK_TINY_LOG_02, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item OAK_TINY_LOG_12 = register(PurumodModBlocks.OAK_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
-	public static final Item BIRCH_TINY_LOG_12 = register(PurumodModBlocks.BIRCH_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item BIRCH_TINY_LOG_01 = register(PurumodModBlocks.BIRCH_TINY_LOG_01, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item DARK_OAK_TINY_LOG_01 = register(PurumodModBlocks.DARK_OAK_TINY_LOG_01, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item JUNGLE_TINY_LOG_01 = register(PurumodModBlocks.JUNGLE_TINY_LOG_01, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item SPRUCE_TINY_LOG_01 = register(PurumodModBlocks.SPRUCE_TINY_LOG_01, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item ACACIA_TINY_LOG_01 = register(PurumodModBlocks.ACACIA_TINY_LOG_01, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item DARK_OAK_TINY_LOG_12 = register(PurumodModBlocks.DARK_OAK_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item BIRCH_TINY_LOG_12 = register(PurumodModBlocks.BIRCH_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item JUNGLE_TINY_LOG_12 = register(PurumodModBlocks.JUNGLE_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item SPRUCE_TINY_LOG_12 = register(PurumodModBlocks.SPRUCE_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item ACACIA_TINY_LOG_12 = register(PurumodModBlocks.ACACIA_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_TINY_LOG_11 = register(PurumodModBlocks.OAK_TINY_LOG_11, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_TINY_LOG_10 = register(PurumodModBlocks.OAK_TINY_LOG_10, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_TINY_LOG_09 = register(PurumodModBlocks.OAK_TINY_LOG_09, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_TINY_LOG_08 = register(PurumodModBlocks.OAK_TINY_LOG_08, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_TINY_LOG_07 = register(PurumodModBlocks.OAK_TINY_LOG_07, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_TINY_LOG_06 = register(PurumodModBlocks.OAK_TINY_LOG_06, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_TINY_LOG_05 = register(PurumodModBlocks.OAK_TINY_LOG_05, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_TINY_LOG_04 = register(PurumodModBlocks.OAK_TINY_LOG_04, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_TINY_LOG_03 = register(PurumodModBlocks.OAK_TINY_LOG_03, CreativeModeTab.TAB_DECORATIONS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

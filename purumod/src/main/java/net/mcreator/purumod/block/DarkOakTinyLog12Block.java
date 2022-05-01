@@ -5,6 +5,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -67,13 +68,27 @@ public class DarkOakTinyLog12Block extends Block implements SimpleWaterloggedBlo
 		switch ((Direction) state.getValue(FACING)) {
 			case SOUTH :
 			default :
-				return box(0, 0, 0, 4, 4, 16).move(offset.x, offset.y, offset.z);
+				return Shapes.or(box(0, 0, 0, 4, 4, 16), box(6, 0, 0, 10, 4, 16), box(11, 0, 0, 15, 4, 16), box(1, 4, 0, 5, 8, 16),
+						box(5, 4, 0, 9, 8, 16), box(12, 4, 0, 16, 8, 16), box(0, 8, 0, 4, 12, 16), box(6, 8, 0, 10, 12, 16),
+						box(10, 8, 0, 14, 12, 16), box(2, 12, 0, 6, 16, 16), box(6, 12, 0, 10, 16, 16), box(11, 12, 0, 15, 16.1, 16))
+						.move(offset.x, offset.y, offset.z);
 			case NORTH :
-				return box(12, 0, 0, 16, 4, 16).move(offset.x, offset.y, offset.z);
+				return Shapes
+						.or(box(12, 0, 0, 16, 4, 16), box(6, 0, 0, 10, 4, 16), box(1, 0, 0, 5, 4, 16), box(11, 4, 0, 15, 8, 16),
+								box(7, 4, 0, 11, 8, 16), box(0, 4, 0, 4, 8, 16), box(12, 8, 0, 16, 12, 16), box(6, 8, 0, 10, 12, 16),
+								box(2, 8, 0, 6, 12, 16), box(10, 12, 0, 14, 16, 16), box(6, 12, 0, 10, 16, 16), box(1, 12, 0, 5, 16.1, 16))
+						.move(offset.x, offset.y, offset.z);
 			case EAST :
-				return box(0, 0, 12, 16, 4, 16).move(offset.x, offset.y, offset.z);
+				return Shapes
+						.or(box(0, 0, 12, 16, 4, 16), box(0, 0, 6, 16, 4, 10), box(0, 0, 1, 16, 4, 5), box(0, 4, 11, 16, 8, 15),
+								box(0, 4, 7, 16, 8, 11), box(0, 4, 0, 16, 8, 4), box(0, 8, 12, 16, 12, 16), box(0, 8, 6, 16, 12, 10),
+								box(0, 8, 2, 16, 12, 6), box(0, 12, 10, 16, 16, 14), box(0, 12, 6, 16, 16, 10), box(0, 12, 1, 16, 16.1, 5))
+						.move(offset.x, offset.y, offset.z);
 			case WEST :
-				return box(0, 0, 0, 16, 4, 4).move(offset.x, offset.y, offset.z);
+				return Shapes.or(box(0, 0, 0, 16, 4, 4), box(0, 0, 6, 16, 4, 10), box(0, 0, 11, 16, 4, 15), box(0, 4, 1, 16, 8, 5),
+						box(0, 4, 5, 16, 8, 9), box(0, 4, 12, 16, 8, 16), box(0, 8, 0, 16, 12, 4), box(0, 8, 6, 16, 12, 10),
+						box(0, 8, 10, 16, 12, 14), box(0, 12, 2, 16, 16, 6), box(0, 12, 6, 16, 16, 10), box(0, 12, 11, 16, 16.1, 15))
+						.move(offset.x, offset.y, offset.z);
 		}
 	}
 

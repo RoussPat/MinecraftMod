@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "template_tinylog_02:default",
+    "customModelName": "template_tinylog_02:oak",
     "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -27,6 +27,15 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
+        "My": 4.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 6.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 10.0,
         "My": 4.0,
         "Mz": 16.0,
         "subtract": false

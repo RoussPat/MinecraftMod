@@ -1,11 +1,11 @@
 
 package net.mcreator.purumod.block;
 
-import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -68,13 +68,13 @@ public class OakTinyLog02Block extends Block implements SimpleWaterloggedBlock
 		switch ((Direction) state.getValue(FACING)) {
 			case SOUTH :
 			default :
-				return box(0, 0, 0, 4, 4, 16).move(offset.x, offset.y, offset.z);
+				return Shapes.or(box(0, 0, 0, 4, 4, 16), box(6, 0, 0, 10, 4, 16)).move(offset.x, offset.y, offset.z);
 			case NORTH :
-				return box(12, 0, 0, 16, 4, 16).move(offset.x, offset.y, offset.z);
+				return Shapes.or(box(12, 0, 0, 16, 4, 16), box(6, 0, 0, 10, 4, 16)).move(offset.x, offset.y, offset.z);
 			case EAST :
-				return box(0, 0, 12, 16, 4, 16).move(offset.x, offset.y, offset.z);
+				return Shapes.or(box(0, 0, 12, 16, 4, 16), box(0, 0, 6, 16, 4, 10)).move(offset.x, offset.y, offset.z);
 			case WEST :
-				return box(0, 0, 0, 16, 4, 4).move(offset.x, offset.y, offset.z);
+				return Shapes.or(box(0, 0, 0, 16, 4, 4), box(0, 0, 6, 16, 4, 10)).move(offset.x, offset.y, offset.z);
 		}
 	}
 
