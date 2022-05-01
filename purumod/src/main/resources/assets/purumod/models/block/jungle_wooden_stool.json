@@ -3,6 +3,6 @@
   "textures": {
     "all": "purumod:blocks/t_woodenstool_jungle",
     "particle": "purumod:blocks/t_woodenstool_jungle",
-    "2": "purumod:blocks/t_woodenstool_jungle"
+    "2": "purumod:blocks/t_woodenstool_oak"
   }
 }

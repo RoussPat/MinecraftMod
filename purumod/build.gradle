@@ -51,6 +51,8 @@ minecraft {
 }
 
 dependencies {
+    implementation 'org.projectlombok:lombok:1.18.22'
+    implementation 'org.projectlombok:lombok:1.18.22'
     minecraft 'net.minecraftforge:forge:1.17.1-37.1.1'
 }
 

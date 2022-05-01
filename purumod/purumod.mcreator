@@ -119,18 +119,108 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "oak_wooden_chair_craft_r"
+    },
+    {
+      "name": "OakTinyLogItem",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "oak_tiny_log_item",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog01",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_01",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog02",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_02",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "OakTinyLog12",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_tiny_log_12",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "BirchTinyLog12",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_tiny_log_12",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "DarkOakTinyLog12",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_tiny_log_12",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "JungleTinyLog12",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_tiny_log_12",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "SpruceTinyLog12",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_tiny_log_12",
+      "path": "~/TinyLog"
+    },
+    {
+      "name": "AcaciaTinyLog12",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_tiny_log_12",
+      "path": "~/TinyLog"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.purumod.jungle_wooden_stool": "Jungle Wooden Stool",
+      "block.purumod.spruce_tiny_log_12": "Oak Tiny Log 0 1",
+      "block.purumod.birch_tiny_log_12": "Oak Tiny Log 0 1",
+      "item.purumod.oak_tiny_log_item": "Oak Tiny Log Item",
       "block.purumod.birch_wooden_stool": "Birch Wooden Stool",
       "block.purumod.oak_wooden_stool": "Oak Wooden Stool",
       "block.purumod.dark_oak_wooden_stool": "Dark Oak Wooden Stool",
       "block.purumod.oak_wooden_chair": "Oak Wooden Chair",
+      "block.purumod.jungle_tiny_log_12": "Oak Tiny Log 0 1",
       "block.purumod.spruce_wooden_stool": "Spruce Wooden Stool",
+      "block.purumod.oak_tiny_log_02": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_01": "Oak Tiny Log 0 1",
+      "block.purumod.oak_tiny_log_12": "Oak Tiny Log 0 1",
+      "block.purumod.jungle_wooden_stool": "Jungle Wooden Stool",
+      "block.purumod.acacia_tiny_log_12": "Oak Tiny Log 0 1",
+      "block.purumod.dark_oak_tiny_log_12": "Oak Tiny Log 0 1",
       "block.purumod.acacia_wooden_stool": "Acacia Wooden Stool"
     }
   },
@@ -139,6 +229,10 @@
     "children": [
       {
         "name": "WoodenStool",
+        "children": []
+      },
+      {
+        "name": "TinyLog",
         "children": []
       }
     ]
@@ -157,6 +251,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.17.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.purumod",
     "lockBaseModFiles": false
   },

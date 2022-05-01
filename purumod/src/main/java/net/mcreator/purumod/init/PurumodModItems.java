@@ -13,6 +13,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.purumod.item.OakTinyLogItemItem;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -26,6 +28,15 @@ public class PurumodModItems {
 	public static final Item ACACIA_WOODEN_STOOL = register(PurumodModBlocks.ACACIA_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item JUNGLE_WOODEN_STOOL = register(PurumodModBlocks.JUNGLE_WOODEN_STOOL, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item OAK_WOODEN_CHAIR = register(PurumodModBlocks.OAK_WOODEN_CHAIR, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item OAK_TINY_LOG_ITEM = register(new OakTinyLogItemItem());
+	public static final Item OAK_TINY_LOG_01 = register(PurumodModBlocks.OAK_TINY_LOG_01, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_TINY_LOG_02 = register(PurumodModBlocks.OAK_TINY_LOG_02, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item OAK_TINY_LOG_12 = register(PurumodModBlocks.OAK_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item BIRCH_TINY_LOG_12 = register(PurumodModBlocks.BIRCH_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item DARK_OAK_TINY_LOG_12 = register(PurumodModBlocks.DARK_OAK_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item JUNGLE_TINY_LOG_12 = register(PurumodModBlocks.JUNGLE_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item SPRUCE_TINY_LOG_12 = register(PurumodModBlocks.SPRUCE_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item ACACIA_TINY_LOG_12 = register(PurumodModBlocks.ACACIA_TINY_LOG_12, CreativeModeTab.TAB_DECORATIONS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
