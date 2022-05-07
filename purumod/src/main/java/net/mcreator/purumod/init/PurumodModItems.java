@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
@@ -51,6 +52,8 @@ public class PurumodModItems {
 	public static final Item OAK_TINY_LOG_05 = register(PurumodModBlocks.OAK_TINY_LOG_05, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item OAK_TINY_LOG_04 = register(PurumodModBlocks.OAK_TINY_LOG_04, CreativeModeTab.TAB_DECORATIONS);
 	public static final Item OAK_TINY_LOG_03 = register(PurumodModBlocks.OAK_TINY_LOG_03, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item SEAT = register(
+			new SpawnEggItem(PurumodModEntities.SEAT, -1, -1, new Item.Properties().tab(null)).setRegistryName("seat_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
