@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "medieval:horse_with_cart",
+            "materials": {
+                "default": "husk"
+            },
+            "textures": {
+                "default": "textures/entity/horse_with_cart"
+            },
+            "geometry": {
+                "default": "geometry.horse_with_cart"
+            },
+            "animations": {
+                "moving": "animation.horse_with_cart.move",
+                "move": "controller.animation.horse_with_cart.move"
+            },
+            "scripts": {
+                "animate": [
+                    "move"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "texture": "egg_horse_with_cart"
+            }
+        }
+    }
+}
