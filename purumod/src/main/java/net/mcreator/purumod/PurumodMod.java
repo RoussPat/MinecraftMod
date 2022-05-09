@@ -27,7 +27,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.purumod.init.PurumodModItems;
+<<<<<<< HEAD
+=======
 import net.mcreator.purumod.init.PurumodModEntities;
+>>>>>>> a8fb418774a8d962e23bef616baad12207187cfe
 import net.mcreator.purumod.init.PurumodModBlocks;
 
 import java.util.function.Supplier;
@@ -48,7 +51,10 @@ public class PurumodMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		PurumodModBlocks.REGISTRY.register(bus);
 		PurumodModItems.REGISTRY.register(bus);
+<<<<<<< HEAD
+=======
 		PurumodModEntities.REGISTRY.register(bus);
+>>>>>>> a8fb418774a8d962e23bef616baad12207187cfe
 
 	}
 

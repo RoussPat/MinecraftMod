@@ -81,6 +81,8 @@ import net.mcreator.purumod.block.BirchTinyLog03Block;
 import net.mcreator.purumod.block.BirchTinyLog02Block;
 import net.mcreator.purumod.block.BirchTinyLog01Block;
 import net.mcreator.purumod.block.AcaciaWoodenStoolBlock;
+<<<<<<< HEAD
+=======
 import net.mcreator.purumod.block.AcaciaTinyLog12Block;
 import net.mcreator.purumod.block.AcaciaTinyLog11Block;
 import net.mcreator.purumod.block.AcaciaTinyLog10Block;
@@ -93,6 +95,7 @@ import net.mcreator.purumod.block.AcaciaTinyLog04Block;
 import net.mcreator.purumod.block.AcaciaTinyLog03Block;
 import net.mcreator.purumod.block.AcaciaTinyLog02Block;
 import net.mcreator.purumod.block.AcaciaTinyLog01Block;
+>>>>>>> a8fb418774a8d962e23bef616baad12207187cfe
 import net.mcreator.purumod.PurumodMod;
 
 public class PurumodModBlocks {
@@ -104,19 +107,6 @@ public class PurumodModBlocks {
 	public static final RegistryObject<Block> ACACIA_WOODEN_STOOL = REGISTRY.register("acacia_wooden_stool", () -> new AcaciaWoodenStoolBlock());
 	public static final RegistryObject<Block> JUNGLE_WOODEN_STOOL = REGISTRY.register("jungle_wooden_stool", () -> new JungleWoodenStoolBlock());
 	public static final RegistryObject<Block> OAK_WOODEN_CHAIR = REGISTRY.register("oak_wooden_chair", () -> new OakWoodenChairBlock());
-	public static final RegistryObject<Block> OAK_TINY_LOG_01 = REGISTRY.register("oak_tiny_log_01", () -> new OakTinyLog01Block());
-	public static final RegistryObject<Block> OAK_TINY_LOG_02 = REGISTRY.register("oak_tiny_log_02", () -> new OakTinyLog02Block());
-	public static final RegistryObject<Block> OAK_TINY_LOG_12 = REGISTRY.register("oak_tiny_log_12", () -> new OakTinyLog12Block());
-	public static final RegistryObject<Block> SPRUCE_TINY_LOG_01 = REGISTRY.register("spruce_tiny_log_01", () -> new SpruceTinyLog01Block());
-	public static final RegistryObject<Block> OAK_TINY_LOG_11 = REGISTRY.register("oak_tiny_log_11", () -> new OakTinyLog11Block());
-	public static final RegistryObject<Block> OAK_TINY_LOG_10 = REGISTRY.register("oak_tiny_log_10", () -> new OakTinyLog10Block());
-	public static final RegistryObject<Block> OAK_TINY_LOG_09 = REGISTRY.register("oak_tiny_log_09", () -> new OakTinyLog09Block());
-	public static final RegistryObject<Block> OAK_TINY_LOG_08 = REGISTRY.register("oak_tiny_log_08", () -> new OakTinyLog08Block());
-	public static final RegistryObject<Block> OAK_TINY_LOG_07 = REGISTRY.register("oak_tiny_log_07", () -> new OakTinyLog07Block());
-	public static final RegistryObject<Block> OAK_TINY_LOG_06 = REGISTRY.register("oak_tiny_log_06", () -> new OakTinyLog06Block());
-	public static final RegistryObject<Block> OAK_TINY_LOG_05 = REGISTRY.register("oak_tiny_log_05", () -> new OakTinyLog05Block());
-	public static final RegistryObject<Block> OAK_TINY_LOG_04 = REGISTRY.register("oak_tiny_log_04", () -> new OakTinyLog04Block());
-	public static final RegistryObject<Block> OAK_TINY_LOG_03 = REGISTRY.register("oak_tiny_log_03", () -> new OakTinyLog03Block());
 	public static final RegistryObject<Block> SPRUCE_TINY_LOG_02 = REGISTRY.register("spruce_tiny_log_02", () -> new SpruceTinyLog02Block());
 	public static final RegistryObject<Block> SPRUCE_TINY_LOG_03 = REGISTRY.register("spruce_tiny_log_03", () -> new SpruceTinyLog03Block());
 	public static final RegistryObject<Block> SPRUCE_TINY_LOG_04 = REGISTRY.register("spruce_tiny_log_04", () -> new SpruceTinyLog04Block());

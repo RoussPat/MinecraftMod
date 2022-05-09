@@ -1064,7 +1064,10 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
+<<<<<<< HEAD
+=======
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+>>>>>>> a8fb418774a8d962e23bef616baad12207187cfe
     "modElementsPackage": "net.mcreator.purumod",
     "lockBaseModFiles": false
   },
