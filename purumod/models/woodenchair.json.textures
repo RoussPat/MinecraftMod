@@ -5,6 +5,42 @@
         "0": "t_woodenchair_oak"
       },
       "name": "default"
+    },
+    "oak": {
+      "map": {
+        "0": "t_woodenchair_oak"
+      },
+      "name": "oak"
+    },
+    "birch": {
+      "map": {
+        "0": "t_woodenchair_birch"
+      },
+      "name": "birch"
+    },
+    "darkoak": {
+      "map": {
+        "0": "t_woodenchair_darkoak"
+      },
+      "name": "darkoak"
+    },
+    "jungle": {
+      "map": {
+        "0": "t_woodenchair_jungle"
+      },
+      "name": "jungle"
+    },
+    "spruce": {
+      "map": {
+        "0": "t_woodenchair_spruce"
+      },
+      "name": "spruce"
+    },
+    "acacia": {
+      "map": {
+        "0": "t_woodenchair_acacia"
+      },
+      "name": "acacia"
     }
   }
 }
