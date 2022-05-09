@@ -18,7 +18,7 @@ public class OnSeatableBlockRightClickedProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level) {
-			Entity entityToSpawn = new SeatEntity(PurumodModEntities.SEAT, _level);
+			Entity entityToSpawn = new SeatEntity(PurumodModEntities.SEAT.get(), _level);
 			entityToSpawn.moveTo((x + 0.5), y, (z + 0.5), entity.getYRot(), entity.getXRot());
 			entityToSpawn.setYBodyRot(entity.getYRot());
 			entityToSpawn.setYHeadRot(entity.getYRot());

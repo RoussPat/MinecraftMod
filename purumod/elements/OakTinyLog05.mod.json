@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "block",
   "definition": {
     "texture": "t_tinylogs_oak",
@@ -68,20 +68,20 @@
         "subtract": false
       }
     ],
-    "name": "Oak Tiny Log 0 1",
+    "name": "Oak Tiny Log 0 5",
     "specialInfo": [],
     "hardness": 0.0,
     "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
       "value": "CUSTOM:OakTinyLogItem"
     },
-    "dropAmount": 2,
+    "dropAmount": 5,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -99,17 +99,17 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:OakTinyLogItem"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
-    "fireSpreadSpeed": 0,
+    "flammability": 10,
+    "fireSpreadSpeed": 5,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "DESTROY",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
@@ -118,16 +118,16 @@
     "breakSound": {
       "value": ""
     },
-    "stepSound": {
-      "value": ""
-    },
-    "placeSound": {
+    "fallSound": {
       "value": ""
     },
     "hitSound": {
       "value": ""
     },
-    "fallSound": {
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
       "value": ""
     },
     "luminance": 0,
@@ -164,6 +164,7 @@
         "value": "Blocks.STONE"
       }
     ],
+    "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

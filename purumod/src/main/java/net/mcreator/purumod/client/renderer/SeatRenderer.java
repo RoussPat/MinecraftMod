@@ -1,3 +1,4 @@
+
 package net.mcreator.purumod.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;

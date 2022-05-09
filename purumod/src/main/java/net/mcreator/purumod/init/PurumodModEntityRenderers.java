@@ -15,6 +15,6 @@ import net.mcreator.purumod.client.renderer.SeatRenderer;
 public class PurumodModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(PurumodModEntities.SEAT, SeatRenderer::new);
+		event.registerEntityRenderer(PurumodModEntities.SEAT.get(), SeatRenderer::new);
 	}
 }

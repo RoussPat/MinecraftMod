@@ -8,7 +8,9 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
@@ -28,6 +30,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
@@ -49,7 +52,6 @@ public class OakTinyLog11Block extends Block implements SimpleWaterloggedBlock
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0f, 1f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
-		setRegistryName("oak_tiny_log_11");
 	}
 
 	@Override
@@ -114,9 +116,29 @@ public class OakTinyLog11Block extends Block implements SimpleWaterloggedBlock
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
 			BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
-			world.getLiquidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
+			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	}
+
+	@Override
+	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+		return 10;
+	}
+
+	@Override
+	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
+		return 5;
+	}
+
+	@Override
+	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
+		return new ItemStack(PurumodModItems.OAK_TINY_LOG_ITEM.get());
+	}
+
+	@Override
+	public PushReaction getPistonPushReaction(BlockState state) {
+		return PushReaction.DESTROY;
 	}
 
 	@Override
@@ -124,11 +146,11 @@ public class OakTinyLog11Block extends Block implements SimpleWaterloggedBlock
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PurumodModItems.OAK_TINY_LOG_ITEM, (int) (2)));
+		return Collections.singletonList(new ItemStack(PurumodModItems.OAK_TINY_LOG_ITEM.get(), 11));
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.OAK_TINY_LOG_11, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.OAK_TINY_LOG_11.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

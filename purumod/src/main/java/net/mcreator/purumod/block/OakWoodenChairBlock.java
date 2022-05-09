@@ -48,7 +48,6 @@ public class OakWoodenChairBlock extends Block implements SimpleWaterloggedBlock
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
-		setRegistryName("oak_wooden_chair");
 	}
 
 	@Override
@@ -105,7 +104,7 @@ public class OakWoodenChairBlock extends Block implements SimpleWaterloggedBlock
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
 			BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
-			world.getLiquidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
+			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
@@ -120,6 +119,6 @@ public class OakWoodenChairBlock extends Block implements SimpleWaterloggedBlock
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.OAK_WOODEN_CHAIR, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.OAK_WOODEN_CHAIR.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

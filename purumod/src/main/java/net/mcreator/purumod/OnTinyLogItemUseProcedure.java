@@ -55,7 +55,7 @@ public class OnTinyLogItemUseProcedure {
         logger.info(descriptionId);
         logger.info(itemstack.getDescriptionId());
         if (stackSize < 12 && Objects.equals(aimedWoodType, heldItemWoodType) && descriptionId.contains("tiny_log")) {
-            if (itemstack.getCount() > 1) {
+            if (itemstack.getCount() >= 1) {
                 itemstack.setCount(itemstack.getCount() - 1);
                 BlockState newBlock = getNextBlock(blockstate.getBlock());
                 copyAllProperties(world.getBlockState(pos), newBlock);
@@ -70,13 +70,16 @@ public class OnTinyLogItemUseProcedure {
 
     private static void placeBlockNormally(Level world, BlockPos pos, BlockState blockState, ItemStack itemstack, Player player, Direction clickedFace) {
         var newPos = computeNewPos(clickedFace, pos);
-        BlockState newBlockState =  world.getBlockState(newPos);
+        BlockState newBlockState = world.getBlockState(newPos);
         String descriptionId = Objects.requireNonNull(newBlockState.getBlock().getRegistryName()).toString();
         if (descriptionId.contains("tiny_log")) {
             placeTinyLog(world, newPos, newBlockState, itemstack, player, clickedFace);
         } else {
-            world.setBlock(newPos, PurumodModBlocks.OAK_TINY_LOG_01.defaultBlockState(), 3);
-            setDirectionForBlock(world, player.getDirection(), newPos);
+            if (itemstack.getCount() >= 1) {
+                itemstack.setCount(itemstack.getCount() - 1);
+                world.setBlock(newPos, PurumodModBlocks.OAK_TINY_LOG_01.get().defaultBlockState(), 3);
+                setDirectionForBlock(world, player.getDirection(), newPos);
+            }
         }
     }
 
@@ -97,30 +100,30 @@ public class OnTinyLogItemUseProcedure {
     }
 
     private static BlockState getNextBlock(Block block) {
-        if (PurumodModBlocks.OAK_TINY_LOG_01.equals(block)) {
-            return PurumodModBlocks.OAK_TINY_LOG_02.defaultBlockState();
-        } else if (PurumodModBlocks.OAK_TINY_LOG_02.equals(block)) {
-            return PurumodModBlocks.OAK_TINY_LOG_03.defaultBlockState();
-        } else if (PurumodModBlocks.OAK_TINY_LOG_03.equals(block)) {
-            return PurumodModBlocks.OAK_TINY_LOG_04.defaultBlockState();
-        } else if (PurumodModBlocks.OAK_TINY_LOG_04.equals(block)) {
-            return PurumodModBlocks.OAK_TINY_LOG_05.defaultBlockState();
-        } else if (PurumodModBlocks.OAK_TINY_LOG_05.equals(block)) {
-            return PurumodModBlocks.OAK_TINY_LOG_06.defaultBlockState();
-        } else if (PurumodModBlocks.OAK_TINY_LOG_06.equals(block)) {
-            return PurumodModBlocks.OAK_TINY_LOG_07.defaultBlockState();
-        } else if (PurumodModBlocks.OAK_TINY_LOG_07.equals(block)) {
-            return PurumodModBlocks.OAK_TINY_LOG_08.defaultBlockState();
-        } else if (PurumodModBlocks.OAK_TINY_LOG_08.equals(block)) {
-            return PurumodModBlocks.OAK_TINY_LOG_09.defaultBlockState();
-        } else if (PurumodModBlocks.OAK_TINY_LOG_09.equals(block)) {
-            return PurumodModBlocks.OAK_TINY_LOG_10.defaultBlockState();
-        } else if (PurumodModBlocks.OAK_TINY_LOG_10.equals(block)) {
-            return PurumodModBlocks.OAK_TINY_LOG_11.defaultBlockState();
-        } else if (PurumodModBlocks.OAK_TINY_LOG_11.equals(block)) {
-            return PurumodModBlocks.OAK_TINY_LOG_12.defaultBlockState();
+        if (PurumodModBlocks.OAK_TINY_LOG_01.get().equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_02.get().defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_02.get().equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_03.get().defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_03.get().equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_04.get().defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_04.get().equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_05.get().defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_05.get().equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_06.get().defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_06.get().equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_07.get().defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_07.get().equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_08.get().defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_08.get().equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_09.get().defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_09.get().equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_10.get().defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_10.get().equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_11.get().defaultBlockState();
+        } else if (PurumodModBlocks.OAK_TINY_LOG_11.get().equals(block)) {
+            return PurumodModBlocks.OAK_TINY_LOG_12.get().defaultBlockState();
         }
-        return PurumodModBlocks.OAK_TINY_LOG_01.defaultBlockState();
+        return PurumodModBlocks.OAK_TINY_LOG_01.get().defaultBlockState();
 
     }
 

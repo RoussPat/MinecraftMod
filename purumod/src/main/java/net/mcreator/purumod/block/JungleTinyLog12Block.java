@@ -49,7 +49,6 @@ public class JungleTinyLog12Block extends Block implements SimpleWaterloggedBloc
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0f, 1f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
-		setRegistryName("jungle_tiny_log_12");
 	}
 
 	@Override
@@ -120,7 +119,7 @@ public class JungleTinyLog12Block extends Block implements SimpleWaterloggedBloc
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
 			BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
-			world.getLiquidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
+			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
@@ -130,11 +129,11 @@ public class JungleTinyLog12Block extends Block implements SimpleWaterloggedBloc
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PurumodModItems.OAK_TINY_LOG_ITEM, (int) (2)));
+		return Collections.singletonList(new ItemStack(PurumodModItems.OAK_TINY_LOG_ITEM.get(), 2));
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.JUNGLE_TINY_LOG_12, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.JUNGLE_TINY_LOG_12.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

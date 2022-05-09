@@ -48,7 +48,6 @@ public class BirchTinyLog01Block extends Block implements SimpleWaterloggedBlock
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0f, 1f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
-		setRegistryName("birch_tiny_log_01");
 	}
 
 	@Override
@@ -105,7 +104,7 @@ public class BirchTinyLog01Block extends Block implements SimpleWaterloggedBlock
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
 			BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
-			world.getLiquidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
+			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
@@ -115,11 +114,11 @@ public class BirchTinyLog01Block extends Block implements SimpleWaterloggedBlock
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PurumodModItems.OAK_TINY_LOG_ITEM));
+		return Collections.singletonList(new ItemStack(PurumodModItems.OAK_TINY_LOG_ITEM.get()));
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.BIRCH_TINY_LOG_01, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.BIRCH_TINY_LOG_01.get(), renderType -> renderType == RenderType.cutout());
 	}
 }
