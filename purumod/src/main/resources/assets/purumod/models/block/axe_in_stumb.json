@@ -1,0 +1,8 @@
+{
+  "parent": "purumod:custom/axeinstump",
+  "textures": {
+    "all": "purumod:blocks/t_axeinstump",
+    "particle": "purumod:blocks/t_axeinstump",
+    "2": "purumod:blocks/t_axeinstump"
+  }
+}

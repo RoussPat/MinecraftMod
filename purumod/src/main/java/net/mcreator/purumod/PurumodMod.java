@@ -29,6 +29,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.purumod.init.PurumodModItems;
 import net.mcreator.purumod.init.PurumodModEntities;
 import net.mcreator.purumod.init.PurumodModBlocks;
+import net.mcreator.purumod.init.PurumodModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -49,6 +50,7 @@ public class PurumodMod {
 		PurumodModBlocks.REGISTRY.register(bus);
 		PurumodModItems.REGISTRY.register(bus);
 		PurumodModEntities.REGISTRY.register(bus);
+		PurumodModBlockEntities.REGISTRY.register(bus);
 
 	}
 

@@ -80,6 +80,7 @@ import net.mcreator.purumod.block.BirchTinyLog04Block;
 import net.mcreator.purumod.block.BirchTinyLog03Block;
 import net.mcreator.purumod.block.BirchTinyLog02Block;
 import net.mcreator.purumod.block.BirchTinyLog01Block;
+import net.mcreator.purumod.block.AxeInStumbBlock;
 import net.mcreator.purumod.block.AcaciaWoodenStoolBlock;
 import net.mcreator.purumod.block.AcaciaTinyLog12Block;
 import net.mcreator.purumod.block.AcaciaTinyLog11Block;
@@ -176,6 +177,7 @@ public class PurumodModBlocks {
 	public static final RegistryObject<Block> BIRCH_TINY_LOG_12 = REGISTRY.register("birch_tiny_log_12", () -> new BirchTinyLog12Block());
 	public static final RegistryObject<Block> DARK_OAK_TINY_LOG_12 = REGISTRY.register("dark_oak_tiny_log_12", () -> new DarkOakTinyLog12Block());
 	public static final RegistryObject<Block> JUNGLE_TINY_LOG_12 = REGISTRY.register("jungle_tiny_log_12", () -> new JungleTinyLog12Block());
+	public static final RegistryObject<Block> AXE_IN_STUMB = REGISTRY.register("axe_in_stumb", () -> new AxeInStumbBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -260,6 +262,7 @@ public class PurumodModBlocks {
 			BirchTinyLog12Block.registerRenderLayer();
 			DarkOakTinyLog12Block.registerRenderLayer();
 			JungleTinyLog12Block.registerRenderLayer();
+			AxeInStumbBlock.registerRenderLayer();
 		}
 	}
 }

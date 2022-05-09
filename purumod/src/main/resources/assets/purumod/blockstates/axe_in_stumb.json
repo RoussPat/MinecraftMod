@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "purumod:block/axe_in_stumb"
+    },
+    "facing=east": {
+      "model": "purumod:block/axe_in_stumb",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "purumod:block/axe_in_stumb",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "purumod:block/axe_in_stumb",
+      "y": 270
+    }
+  }
+}

@@ -127,6 +127,7 @@ public class PurumodModItems {
 			() -> new JungleTinyLogBackupItem());
 	public static final RegistryObject<Item> DARK_OAK_TINY_LOG_BACKUP = REGISTRY.register("dark_oak_tiny_log_backup",
 			() -> new DarkOakTinyLogBackupItem());
+	public static final RegistryObject<Item> AXE_IN_STUMB = block(PurumodModBlocks.AXE_IN_STUMB, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
