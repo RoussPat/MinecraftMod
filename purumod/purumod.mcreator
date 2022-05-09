@@ -958,6 +958,35 @@
       "locked_code": false,
       "registry_name": "dark_oak_tiny_log_backup",
       "path": "~/TinyLog/DarkOak"
+    },
+    {
+      "name": "SeatableBlockDestroyed",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seatable_block_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Utils/Seat"
     }
   ],
   "variable_elements": [],

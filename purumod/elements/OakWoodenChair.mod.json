@@ -133,6 +133,12 @@
     "onRightClicked": {
       "name": "OnSeatableBlockRightClicked"
     },
+    "onDestroyedByPlayer": {
+      "name": "SeatableBlockDestroyed"
+    },
+    "onDestroyedByExplosion": {
+      "name": "SeatableBlockDestroyed"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
