@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "t_tinylogs_oak"
+      },
+      "name": "default"
+    },
+    "oak": {
+      "map": {
+        "1": "t_tinylogs_oak"
+      },
+      "name": "oak"
+    },
+    "darkoak": {
+      "map": {
+        "1": "t_tinylogs_darkoak"
+      },
+      "name": "darkoak"
+    },
+    "birch": {
+      "map": {
+        "1": "t_tinylogs_birch"
+      },
+      "name": "birch"
+    },
+    "jungle": {
+      "map": {
+        "1": "t_tinylogs_jungle"
+      },
+      "name": "jungle"
+    },
+    "spruce": {
+      "map": {
+        "1": "t_tinylogs_spruce"
+      },
+      "name": "spruce"
+    },
+    "acacia": {
+      "map": {
+        "1": "t_tinylogs_acacia"
+      },
+      "name": "acacia"
+    }
+  }
+}

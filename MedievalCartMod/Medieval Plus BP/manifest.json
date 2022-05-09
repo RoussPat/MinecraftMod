@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Addon de carretas Creado por ALex2707 y Arcanus",
+        "name": "Medieval Plus BP",
+        "uuid": "9d5b977f-5fd5-4470-9854-d058bb3e1311",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 13, 0]
+    },
+    "modules": [
+        {
+            "description": "Addon de carretas Creado por ALex2707 y Arcanus",
+            "type": "data",
+            "uuid": "f450187b-86be-4608-a3c3-54d3b04c60da",
+            "version": [1, 0, 0]
+            }
+        ],
+        "dependencies": [
+            {
+                "uuid": "a3460eed-aca6-4150-bc38-ca9b0346688a",
+                "version": [1, 0, 0]
+        }
+    ]
+}

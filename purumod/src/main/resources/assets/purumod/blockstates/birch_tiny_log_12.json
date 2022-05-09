@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "purumod:block/birch_tiny_log_12"
+    },
+    "facing=east": {
+      "model": "purumod:block/birch_tiny_log_12",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "purumod:block/birch_tiny_log_12",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "purumod:block/birch_tiny_log_12",
+      "y": 270
+    }
+  }
+}

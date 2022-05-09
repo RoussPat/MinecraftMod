@@ -1,0 +1,12 @@
+{
+    "resource_pack-name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "egg_horse_with_cart": {
+            "textures": "textures/items/spawn/egg_horse_with_cart"
+        },
+        "egg_horse_with_covered_wagon": {
+            "textures": "textures/items/spawn/egg_horse_with_covered_wagon"
+        }
+    }
+}

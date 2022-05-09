@@ -1,0 +1,6 @@
+//Entidades
+entity.medieval:horse_with_cart.name=Horse with cart
+item.spawn_egg.entity.medieval:horse_with_cart.name=Horse with cart
+
+entity.medieval:horse_with_covered_wagon.name=Horse with cart and roof
+item.spawn_egg.entity.medieval:horse_with_covered_wagon.name=Horse with cart and roof
