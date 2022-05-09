@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "purumod:block/dark_oak_tiny_log_11"
+    },
+    "facing=east": {
+      "model": "purumod:block/dark_oak_tiny_log_11",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "purumod:block/dark_oak_tiny_log_11",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "purumod:block/dark_oak_tiny_log_11",
+      "y": 270
+    }
+  }
+}

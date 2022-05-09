@@ -97,7 +97,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:OakTinyLogItem"
+      "value": "CUSTOM:OakTinyLog"
     },
     "dropAmount": 7,
     "useLootTableForDrops": false,
@@ -117,7 +117,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "CUSTOM:OakTinyLogItem"
+      "value": "CUSTOM:OakTinyLog"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

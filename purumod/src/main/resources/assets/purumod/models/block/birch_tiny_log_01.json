@@ -1,5 +1,5 @@
 {
-  "parent": "purumod:custom/template_tinylog_02",
+  "parent": "purumod:custom/template_tinylog_01",
   "textures": {
     "all": "purumod:blocks/t_tinylogs_birch",
     "particle": "purumod:blocks/t_tinylogs_birch",

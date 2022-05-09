@@ -32,18 +32,18 @@
         "subtract": false
       }
     ],
-    "name": "Oak Tiny Log 0 1",
+    "name": "Spruce Tiny Log 0 1",
     "specialInfo": [],
     "hardness": 0.0,
     "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:OakTinyLogItem"
+      "value": "CUSTOM:SpruceTinyLog"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -63,7 +63,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:SpruceTinyLog"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -73,7 +73,7 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "DESTROY",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {

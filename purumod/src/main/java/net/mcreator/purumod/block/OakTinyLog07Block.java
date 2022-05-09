@@ -129,7 +129,7 @@ public class OakTinyLog07Block extends Block implements SimpleWaterloggedBlock
 
 	@Override
 	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
-		return new ItemStack(PurumodModItems.OAK_TINY_LOG_ITEM.get());
+		return new ItemStack(PurumodModItems.OAK_TINY_LOG.get());
 	}
 
 	@Override
@@ -142,7 +142,7 @@ public class OakTinyLog07Block extends Block implements SimpleWaterloggedBlock
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(PurumodModItems.OAK_TINY_LOG_ITEM.get(), 7));
+		return Collections.singletonList(new ItemStack(PurumodModItems.OAK_TINY_LOG.get(), 7));
 	}
 
 	@OnlyIn(Dist.CLIENT)

@@ -1,0 +1,8 @@
+{
+  "parent": "purumod:custom/template_tinylog_05",
+  "textures": {
+    "all": "purumod:blocks/t_tinylogs_acacia",
+    "particle": "purumod:blocks/t_tinylogs_acacia",
+    "1": "purumod:blocks/t_tinylogs_acacia"
+  }
+}

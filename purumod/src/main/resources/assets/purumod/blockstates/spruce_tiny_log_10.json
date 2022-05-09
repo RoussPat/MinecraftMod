@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "purumod:block/spruce_tiny_log_10"
+    },
+    "facing=east": {
+      "model": "purumod:block/spruce_tiny_log_10",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "purumod:block/spruce_tiny_log_10",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "purumod:block/spruce_tiny_log_10",
+      "y": 270
+    }
+  }
+}

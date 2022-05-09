@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "purumod:block/jungle_tiny_log_08"
+    },
+    "facing=east": {
+      "model": "purumod:block/jungle_tiny_log_08",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "purumod:block/jungle_tiny_log_08",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "purumod:block/jungle_tiny_log_08",
+      "y": 270
+    }
+  }
+}
