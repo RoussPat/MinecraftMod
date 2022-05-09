@@ -32,7 +32,6 @@ public class SpruceWoodenStoolBlock extends Block {
 	public SpruceWoodenStoolBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
-		setRegistryName("spruce_wooden_stool");
 	}
 
 	@Override
@@ -58,7 +57,7 @@ public class SpruceWoodenStoolBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem()instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
 			return tieredItem.getTier().getLevel() >= -1;
 		return false;
 	}
@@ -73,6 +72,6 @@ public class SpruceWoodenStoolBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.SPRUCE_WOODEN_STOOL, renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(PurumodModBlocks.SPRUCE_WOODEN_STOOL.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

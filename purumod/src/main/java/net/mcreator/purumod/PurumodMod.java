@@ -16,13 +16,18 @@ package net.mcreator.purumod;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
-import net.minecraftforge.fmllegacy.network.NetworkRegistry;
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.simple.SimpleChannel;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
+
+import net.mcreator.purumod.init.PurumodModItems;
+import net.mcreator.purumod.init.PurumodModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -38,6 +43,10 @@ public class PurumodMod {
 	private static int messageID = 0;
 
 	public PurumodMod() {
+
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		PurumodModBlocks.REGISTRY.register(bus);
+		PurumodModItems.REGISTRY.register(bus);
 
 	}
 
