@@ -58,7 +58,7 @@ public class SpruceWoodenStoolBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(1, 0, 1, 15, 14, 15).move(offset.x, offset.y, offset.z);
+		return box(1, 0, 1, 15, 9, 15).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

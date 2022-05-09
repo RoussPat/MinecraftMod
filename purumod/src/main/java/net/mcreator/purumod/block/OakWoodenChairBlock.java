@@ -72,13 +72,13 @@ public class OakWoodenChairBlock extends Block implements SimpleWaterloggedBlock
 		switch ((Direction) state.getValue(FACING)) {
 			case SOUTH :
 			default :
-				return Shapes.or(box(1, 0, 1, 16, 14, 15), box(2, 11, 14, 14, 27, 16)).move(offset.x, offset.y, offset.z);
+				return Shapes.or(box(1, 0, 1, 15, 9, 15), box(2, 6, 0, 14, 22, 2)).move(offset.x, offset.y, offset.z);
 			case NORTH :
-				return Shapes.or(box(0, 0, 1, 15, 14, 15), box(2, 11, 0, 14, 27, 2)).move(offset.x, offset.y, offset.z);
+				return Shapes.or(box(1, 0, 1, 15, 9, 15), box(2, 6, 14, 14, 22, 16)).move(offset.x, offset.y, offset.z);
 			case EAST :
-				return Shapes.or(box(1, 0, 0, 15, 14, 15), box(14, 11, 2, 16, 27, 14)).move(offset.x, offset.y, offset.z);
+				return Shapes.or(box(1, 0, 1, 15, 9, 15), box(0, 6, 2, 2, 22, 14)).move(offset.x, offset.y, offset.z);
 			case WEST :
-				return Shapes.or(box(1, 0, 1, 15, 14, 16), box(0, 11, 2, 2, 27, 14)).move(offset.x, offset.y, offset.z);
+				return Shapes.or(box(1, 0, 1, 15, 9, 15), box(14, 6, 2, 16, 22, 14)).move(offset.x, offset.y, offset.z);
 		}
 	}
 
